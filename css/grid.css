@@ -1,0 +1,77 @@
+/* .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+.row-1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 50px;
+    padding:100px;
+}
+
+.grid-row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100rem;
+
+}
+   
+.row {
+   
+    /* Replace $grid-width with the actual value */
+    max-width: 114rem/* grid width value */;
+    margin: 0 auto;
+}
+
+.row:not(:last-child) {
+    /* Replace $gutter-vertical with the actual value */
+    margin-bottom: 8rem;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class^="col-"] {
+    float: left;
+}
+
+[class^="col-"]:not(:last-child) {
+    /* Replace $gutter-horizontal with the actual value */
+    margin-right: 6rem;
+}
+
+.col-1-of-2 {
+    /* Replace #{$gutter-horizontal} with the actual value */
+    width: calc((100% - 6rem) / 2);
+}
+
+.col-1-of-3 {
+    /* Replace #{$gutter-horizontal} with the actual value */
+    width: calc((100% - 2 *6rem) / 3);
+}
+
+.col-2-of-3 {
+    /* Replace #{$gutter-horizontal} with the actual value */
+    width: calc(2 * ((100% - 2 *6rem) / 3) + 6rem);
+}
+
+.col-1-of-4 {
+    /* Replace #{$gutter-horizontal} with the actual value */
+    width: calc((100% - 3 *6rem) / 4);
+}
+
+.col-2-of-4 {
+    /* Replace #{$gutter-horizontal} with the actual value */
+    width: calc(2 * ((100% - 3 *6rem) / 4) + 6rem);
+}
+
+.col-3-of-4 {
+    /* Replace #{$gutter-horizontal} with the actual value */
+    width: calc(3 * ((100% - 3 *6rem) / 4) + 2 *6rem);
+}
+
+
+    
